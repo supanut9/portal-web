@@ -41,6 +41,7 @@ export default async function Home() {
         </div>
         <Link
           href="/auth/logout/global"
+          prefetch={false}
           className="rounded-full border border-[var(--border)] px-4 py-2 text-sm text-[var(--muted-foreground)] transition hover:text-white"
         >
           Sign out

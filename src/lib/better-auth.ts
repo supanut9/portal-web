@@ -89,7 +89,6 @@ export const auth = betterAuth({
     storeAccountCookie: true,
   },
   plugins: [
-    nextCookies(),
     genericOAuth({
       config: [
         {
@@ -114,6 +113,7 @@ export const auth = betterAuth({
         },
       ],
     }),
+    nextCookies(),
   ],
 });
 
