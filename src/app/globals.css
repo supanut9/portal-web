@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b0d12;
+  --foreground: #f4f6fb;
+  --card: #11141b;
+  --card-foreground: #f4f6fb;
+  --muted: #1a1e28;
+  --muted-foreground: #9aa3b2;
+  --border: #1f2430;
+  --accent: #6366f1;
+  --radius: 0.875rem;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  font-family: var(--font-sans), "Segoe UI", system-ui, sans-serif;
+}
