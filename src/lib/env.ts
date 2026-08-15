@@ -16,6 +16,7 @@ export const env = {
   communityWebBaseUrl: requireEnv("NEXT_PUBLIC_COMMUNITY_WEB_BASE_URL", "http://localhost:3006"),
   knowledgeWebBaseUrl: requireEnv("NEXT_PUBLIC_KNOWLEDGE_WEB_BASE_URL", "http://localhost:3007"),
   languageWebBaseUrl: requireEnv("NEXT_PUBLIC_LANGUAGE_WEB_BASE_URL", "http://localhost:3008"),
+  macroWebBaseUrl: requireEnv("NEXT_PUBLIC_MACRO_WEB_BASE_URL", "http://localhost:3013"),
   betterAuthSecret: requireEnv(
     "BETTER_AUTH_SECRET",
     process.env.SESSION_COOKIE_SECRET ?? "change-me-to-a-long-random-string",

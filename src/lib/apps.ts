@@ -1,7 +1,7 @@
 import { env } from "./env";
 
 export type LauncherApp = {
-  id: "community" | "knowledge" | "language";
+  id: "community" | "knowledge" | "language" | "macro";
   name: string;
   tagline: string;
   href: string;
@@ -26,6 +26,14 @@ export function getLauncherApps(): LauncherApp[] {
       href: env.knowledgeWebBaseUrl,
       silentSsoUrl: new URL("/api/auth/silent", env.knowledgeWebBaseUrl).toString(),
       accent: "from-emerald-500 to-teal-500",
+    },
+    {
+      id: "macro",
+      name: "Macro",
+      tagline: "Releases, curves, inflation, sectors.",
+      href: env.macroWebBaseUrl,
+      silentSsoUrl: new URL("/api/auth/silent", env.macroWebBaseUrl).toString(),
+      accent: "from-violet-500 to-sky-500",
     },
     {
       id: "language",
